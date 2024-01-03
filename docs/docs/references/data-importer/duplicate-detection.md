@@ -40,3 +40,5 @@ Conversely, it also means that:
 Identifier-based duplicate detection is handled by the data importer. Each transaction you wish to import **must** have a unique identifier in a column.
 
 If you select the column and the field it should be stored in, the data importer will search your Firefly III installation for this specific identifier. When Firefly III reports it's been found, the transaction will not be imported (again).
+
+*Please Note* that deleted transactions [are still checked](/how-to/data-importer/import/duplicates/#deleted-but-duplicate) by the duplicate detection.
